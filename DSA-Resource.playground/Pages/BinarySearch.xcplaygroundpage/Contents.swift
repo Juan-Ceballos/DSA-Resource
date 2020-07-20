@@ -38,11 +38,15 @@ func binarySearch<T : Comparable>(_ arr: [T], searchKey: T, range: Range<Int>) -
     }
 }
 
-let sortedList = [2,5,6,7,8,9,10]
+let sortedList = [9,2]
 
+let range: Range<Int> = 0..<sortedList.count - 1
+print(range.lowerBound)
+print(range.upperBound)
 let index = binarySearch(sortedList, searchKey: 9, range: (0..<sortedList.count - 1))
 print("found index \(index ?? -999)")
 
 let characters = ["a","b","c", "y"]
 let charIndex = binarySearch(characters, searchKey: "y", range: (0..<characters.count))
 print("found char index: \(charIndex ?? -1)")
+

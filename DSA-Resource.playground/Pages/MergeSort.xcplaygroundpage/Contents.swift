@@ -123,3 +123,6 @@ let list2 = [12,8,29,-100,0,234]
 
 let sortedList2 = mergeSort2(list2)
 print(sortedList2)
+
+
+

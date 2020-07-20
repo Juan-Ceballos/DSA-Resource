@@ -4,5 +4,6 @@
         <page name='QuickSort'/>
         <page name='MergeSort'/>
         <page name='BinarySearch'/>
+        <page name='Stack-ArrImplement'/>
     </pages>
 </playground>
