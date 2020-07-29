@@ -81,3 +81,15 @@ list.push(value: 3)
 
 print(list)
 reverseListPrint(list: list)
+
+func middleNode<T>(list: LinkedList<T>) -> Node<T>?  {
+    var slow = list.head
+    var fast = list.head
+    
+    while let nextFast = fast?.next {
+        fast = nextFast.next
+        slow = slow?.next
+    }
+    
+    return slow
+}

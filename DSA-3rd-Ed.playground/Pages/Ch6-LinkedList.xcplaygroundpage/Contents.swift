@@ -224,3 +224,4 @@ let node = list.node(at: index - 1)!
 let removedValueAt = list.remove(after: node) // so after node before it
 print("After removing at index \(index): \(list)")
 print("Removed value: " + String(describing: removedValueAt))
+print(list.tail?.value)
