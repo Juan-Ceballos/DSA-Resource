@@ -1,7 +1,7 @@
 import Foundation
 
 // print nodes of linked list in reverse
-
+//================== Implement Linked List ================
 class Node<Value> {
     // node has value, and pointer to next node
     var value: Value
@@ -45,6 +45,30 @@ struct LinkedList<Value> {
             tail = head
         }
     }
+    
+    public mutating func reverse()  {
+        // where does the tail go, how does list hold it?
+        print(tail?.value)
+        print(tail?.next?.value)
+        tail = head
+        print(tail?.value)
+        print(tail?.next?.value)
+        var prev = head
+        var current = head?.next
+        print(current?.value)
+        prev?.next = nil
+        
+        while current != nil {
+            let next = current?.next
+            current?.next = prev
+            prev = current
+            current = next
+            print(head?.value)
+        }
+        
+        head = prev
+        print(head?.value)
+    }
 }
 
 extension LinkedList: CustomStringConvertible {
@@ -57,9 +81,12 @@ extension LinkedList: CustomStringConvertible {
     }
 }
 
+//=============================================
+
 // 1 -> 2 -> 3
 // 3, 2, 1
 
+// ch1
 func reverseList(node: Node<Int>?)  {
     
     guard let node = node else {
@@ -82,7 +109,9 @@ list.push(value: 3)
 print(list)
 reverseListPrint(list: list)
 
-func middleNode<T>(list: LinkedList<T>) -> Node<T>?  {
+//========================================================
+// ch 2
+func middleNode<Value>(list: LinkedList<Value>) -> Node<Value>?  {
     var slow = list.head
     var fast = list.head
     
@@ -93,3 +122,30 @@ func middleNode<T>(list: LinkedList<T>) -> Node<T>?  {
     
     return slow
 }
+
+// ===================================================
+// ch 3
+
+// reverse a linked list
+// implemented as linked list function
+print("original list \n\(list)")
+list.reverse()
+print("list reversed \n\(list)")
+
+func listReverse<Value>(list: LinkedList<Value>) -> Node<Value>? {
+    var curr = list.head
+    var prev: Node<Value>?
+    var next: Node<Value>?
+    
+    while curr != nil {
+        next = curr?.next
+        curr?.next = prev
+        prev = curr
+        curr = next
+        print()
+    }
+    
+    return prev
+}
+
+print(listReverse(list: list))
