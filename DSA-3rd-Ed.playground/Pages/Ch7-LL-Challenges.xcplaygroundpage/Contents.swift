@@ -69,6 +69,7 @@ struct LinkedList<Value> {
         head = prev
         print(head?.value)
     }
+    
 }
 
 extension LinkedList: CustomStringConvertible {
@@ -136,7 +137,7 @@ func listReverse<Value>(list: LinkedList<Value>) -> Node<Value>? {
     var curr = list.head
     var prev: Node<Value>?
     var next: Node<Value>?
-    
+    print(curr)
     while curr != nil {
         next = curr?.next
         curr?.next = prev
@@ -148,4 +149,123 @@ func listReverse<Value>(list: LinkedList<Value>) -> Node<Value>? {
     return prev
 }
 
-print(listReverse(list: list))
+print(listReverse(list: list)!)
+
+// ==========================
+// challenge 4
+
+// merge list
+// takes 2 sorted linked list, merges into single sorted linked list.
+// return new linked list sorted nodes
+
+// input 2 linked list, make generice comparable for function
+func mergeSortLinkedList<Value: Comparable>(left: LinkedList<Value>, right: LinkedList<Value>) -> LinkedList<Value> {
+    // 1 -> 2 -> 9
+    // 4 -> 5 -> 6
+    
+    // 1 -> 2 3 4 5 6
+    
+    // if one is empty return the other list
+    guard !left.isEmpty() else {
+        return right
+    }
+    
+    guard !right.isEmpty() else {
+        return left
+    }
+    
+    // have head node
+    var newHead: Node<Value>?
+    
+    // tail node
+    var tail: Node<Value>?
+    
+    // head of each list before iterating
+    var currentLeft = left.head
+    var currentRight = right.head
+    
+    // determine head tail from both list to assign, newHead, and tail
+    if let leftNode = currentLeft, let rightNode = currentRight {
+        // head = lower from left or right
+        if leftNode.value < rightNode.value {
+            newHead = leftNode
+            currentLeft = leftNode.next
+        } else {
+            newHead = rightNode
+            currentRight = rightNode.next
+        }
+        
+        tail = newHead
+    }
+    
+    // compare and add after tail assigned in previous if let
+    while let leftNode = currentLeft, let rightNode = currentRight {
+        if leftNode.value < rightNode.value {
+            tail?.next = leftNode
+            currentLeft = leftNode.next
+        } else {
+            tail?.next = rightNode
+            currentRight = rightNode.next
+        }
+        
+        tail = tail?.next
+    }
+    
+    // add remaining nodes
+    if let leftNodes = currentLeft {
+        tail?.next = leftNodes
+    }
+    
+    if let rightNodes = currentRight {
+        tail?.next = rightNodes
+    }
+    
+    // take newHead added to list to return and iterate all values from that node attached to
+    // it up to tail to add for list
+    var list = LinkedList<Value>()
+    list.head = newHead
+    list.tail = {
+        while let next = tail?.next {
+            tail = next
+        }
+        return tail
+    }()
+    return list
+    
+    // What I was trying to do
+    //var input1Temp = input1
+    //var input2Temp = input2
+    //var newList = LinkedList<Value>()
+    
+    //    guard let input1Nodes = input1Temp.head else {
+    //        return input2Temp
+    //    }
+    //
+    //    guard let input2Nodes = input2Temp.head else {
+    //        return input1Temp
+    //    }
+    //
+    //
+    //    if input1Nodes.value <= input2Nodes.value {
+    //        newList.push(value: input1Nodes.value)
+    //    } else {
+    //        newList.push(value: input2Nodes.value)
+    //    }
+}
+
+var list1 = LinkedList<Int>()
+var list2 = LinkedList<Int>()
+
+list2.push(value: 4)
+list2.push(value: 5)
+list2.push(value: 6)
+
+mergeSortLinkedList(left: list1, right: list2)
+
+
+// challenge 5
+// remove all occurences of given element
+// 1 -> 3 -> 3 -> 4
+// remove 3
+// 1 -> 4
+
