@@ -262,10 +262,64 @@ list2.push(value: 6)
 
 mergeSortLinkedList(left: list1, right: list2)
 
-
+// ===================================================
 // challenge 5
 // remove all occurences of given element
 // 1 -> 3 -> 3 -> 4
 // remove 3
 // 1 -> 4
 
+func removeAll<Value: Comparable>(input: Value, listInput: LinkedList<Value>) -> LinkedList<Value>    {
+    
+    // traverse list from head to tail
+    // remove reference when value matches input in node
+    
+    var list = listInput
+
+    // if head is the input
+    while let head = list.head, head.value == input {
+        list.head = list.head?.next
+    }
+    
+    var prev = list.head
+    var current = list.head?.next
+    
+    while let currentNode = current {
+        guard currentNode.value != input else {
+            prev?.next = currentNode.next
+            current = prev?.next
+            continue
+        }
+        prev = current
+        current = current?.next
+        list.tail = prev
+    }
+    
+    var curr = list.head
+    var next = curr?.next
+    
+    // what I tried doing
+//    while curr != nil {
+//        if next?.value == input {
+//            curr?.next = next?.next
+//            next = curr?.next
+//        } else {
+//            curr = curr?.next
+//        }
+//    }
+    
+    return list
+}
+
+var listCh5 = LinkedList<Int>()
+listCh5.push(value: 1)
+listCh5.push(value: 2)
+listCh5.push(value: 3)
+listCh5.push(value: 4)
+listCh5.push(value: 5)
+
+print(listCh5)
+
+removeAll(input: 3, listInput: listCh5)
+
+print(listCh5)
