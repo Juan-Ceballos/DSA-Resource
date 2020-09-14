@@ -294,11 +294,11 @@ func removeAll<Value: Comparable>(input: Value, listInput: LinkedList<Value>) ->
         current = current?.next
         list.tail = prev
     }
-    
-    var curr = list.head
-    var next = curr?.next
-    
+
     // what I tried doing
+//    var curr = list.head
+//    var next = curr?.next
+    
 //    while curr != nil {
 //        if next?.value == input {
 //            curr?.next = next?.next

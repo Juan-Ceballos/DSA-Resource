@@ -5,5 +5,7 @@
         <page name='Ch6-LinkedList'/>
         <page name='Ch7-LL-Challenges'/>
         <page name='TechCertif-LL'/>
+        <page name='Ch8-Queue'/>
+        <page name='Coast-Queue'/>
     </pages>
 </playground>
