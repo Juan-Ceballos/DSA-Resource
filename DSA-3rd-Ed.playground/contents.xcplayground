@@ -7,5 +7,7 @@
         <page name='TechCertif-LL'/>
         <page name='Ch8-Queue'/>
         <page name='Coast-Queue'/>
+        <page name='MidNode'/>
+        <page name='Squared-Sort-Cameron'/>
     </pages>
 </playground>
