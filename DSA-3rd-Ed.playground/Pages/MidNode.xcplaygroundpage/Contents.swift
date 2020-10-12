@@ -6,8 +6,9 @@ class Node<T> {
     var value: T
     var next: Node<T>?
     
-    public init(value: T) {
+    public init(value: T, next: Node? = nil) {
         self.value = value
+        self.next = next
     }
 }
 
@@ -25,7 +26,8 @@ let node2 = Node(value: 2)
 let node3 = Node(value: 3)
 let node4 = Node(value: 4)
 let node5 = Node(value: 5)
-
+let node6 = Node(value: 9)
+let node7 = Node(value: 19)
 node1.next = node2
 node2.next = node3
 node3.next = node4
