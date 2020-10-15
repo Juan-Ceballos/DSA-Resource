@@ -69,9 +69,13 @@ class MyLinkedList {
         }
         
         var node = head
+        
+        // get to end
         while node?.next != nil {
             node = node?.next
         }
+        
+        // set next of last to new node
         node?.next = Node(val)
         
         
@@ -119,7 +123,6 @@ class MyLinkedList {
     func deleteAtIndex(_ index: Int) {
         var currentIndex = 0
         var currentNode = head
-        var previousNode = head
         
         while let current = currentNode {
             if index == 0 {
@@ -131,14 +134,8 @@ class MyLinkedList {
                 break
             }
             
-            else if currentIndex == index {
-                previousNode?.next = nil
-                tail = previousNode
-            }
-            
             else {
                 currentIndex += 1
-                previousNode = current
                 currentNode = current.next
             }
         }
@@ -187,3 +184,11 @@ obj.addAtIndex(0, 20)
 obj.addAtIndex(1, 30)
 
 print(obj)
+
+func strTest(input: String) {
+    
+    let tempArr = Array(input)
+    print(tempArr)
+}
+
+strTest(input: "Hello")
