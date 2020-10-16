@@ -8,5 +8,6 @@
         <page name='RansomNote'/>
         <page name='LinkedListCycle'/>
         <page name='SmallerThanCurrent'/>
+        <page name='FlipAnImage'/>
     </pages>
 </playground>
