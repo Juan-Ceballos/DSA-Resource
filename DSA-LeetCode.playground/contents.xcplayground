@@ -6,5 +6,6 @@
         <page name='BinaryTree-MaxDepth'/>
         <page name='DesignLinkedList'/>
         <page name='RansomNote'/>
+        <page name='LinkedListCycle'/>
     </pages>
 </playground>
