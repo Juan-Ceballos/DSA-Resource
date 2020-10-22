@@ -9,5 +9,6 @@
         <page name='LinkedListCycle'/>
         <page name='SmallerThanCurrent'/>
         <page name='FlipAnImage'/>
+        <page name='RotateArr'/>
     </pages>
 </playground>
