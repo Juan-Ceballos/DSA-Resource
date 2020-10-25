@@ -10,5 +10,6 @@
         <page name='SmallerThanCurrent'/>
         <page name='FlipAnImage'/>
         <page name='RotateArr'/>
+        <page name='BuySellStocks'/>
     </pages>
 </playground>
