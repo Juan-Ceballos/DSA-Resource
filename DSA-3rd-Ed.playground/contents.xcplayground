@@ -4,11 +4,11 @@
         <page name='Ch5-Stacks'/>
         <page name='Ch6-LinkedList'/>
         <page name='Ch7-LL-Challenges'/>
+        <page name='Ch8-Queues'/>
         <page name='TechCertif-LL'/>
         <page name='Ch8-Queue'/>
         <page name='Coast-BinaryTree'/>
         <page name='MidNode'/>
         <page name='Squared-Sort-Cameron'/>
-        <page name='Ch8-Queues'/>
     </pages>
 </playground>
