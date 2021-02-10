@@ -11,5 +11,6 @@
         <page name='FlipAnImage'/>
         <page name='RotateArr'/>
         <page name='BuySellStocks'/>
+        <page name='FindDuplicates'/>
     </pages>
 </playground>
