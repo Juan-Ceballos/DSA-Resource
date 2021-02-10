@@ -12,5 +12,6 @@
         <page name='RotateArr'/>
         <page name='BuySellStocks'/>
         <page name='FindDuplicates'/>
+        <page name='MajorityElement'/>
     </pages>
 </playground>
