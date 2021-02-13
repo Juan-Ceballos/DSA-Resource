@@ -13,5 +13,7 @@
         <page name='BuySellStocks'/>
         <page name='FindDuplicates'/>
         <page name='MajorityElement'/>
+        <page name='ImageCacher'/>
+        <page name='CountInstances'/>
     </pages>
 </playground>
