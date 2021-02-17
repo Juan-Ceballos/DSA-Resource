@@ -3,5 +3,6 @@
     <pages>
         <page name='CountingValleys'/>
         <page name='SalesMatchPairs'/>
+        <page name='JumpingOnClouds'/>
     </pages>
 </playground>
