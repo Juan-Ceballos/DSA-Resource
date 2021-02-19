@@ -2,7 +2,8 @@
 
 import Foundation
 
-func binarySearch(arr: [Int], target: Int) -> Bool {
+// -> Int? for index, Bool for is in array
+func binarySearch(arr: [Int], target: Int) -> Int {
     
     // divide and conquer for log n runtime
     // has to be sorted, cut out numbers we don't have to look through
@@ -12,13 +13,14 @@ func binarySearch(arr: [Int], target: Int) -> Bool {
     
     while leftIndex <= rightIndex {
         
-        let middleIndex = (leftIndex + rightIndex) / 2
+        // optimized middle index
+        let middleIndex = leftIndex + (rightIndex - leftIndex) / 2
         let middleValue = arr[middleIndex]
         
         print("middle value = \(middleValue), left index = \(leftIndex), right index = \(rightIndex), [\(arr[leftIndex]), \(arr[rightIndex])]")
         
         if middleValue == target {
-            return true
+            return middleIndex
         }
         
         if target < middleValue {
@@ -30,8 +32,8 @@ func binarySearch(arr: [Int], target: Int) -> Bool {
         }
     }
     
-    return false
+    return -999
 }
 
 let sortedArr1 = [3, 5, 8, 9, 11, 22, 37]
-binarySearch(arr: sortedArr1, target: 37)
+binarySearch(arr: sortedArr1, target: 22)
