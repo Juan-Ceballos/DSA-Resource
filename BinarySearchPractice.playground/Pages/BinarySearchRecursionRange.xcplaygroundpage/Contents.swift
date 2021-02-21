@@ -9,7 +9,7 @@ func binarySearchRecursion(arr: [Int], target: Int, range: Range<Int>) -> Int? {
     // divide and conquer for log n runtime
     // has to be sorted, cut out numbers we don't have to look through
         
-    if range.lowerBound >= range.upperBound {
+    if range.lowerBound > range.upperBound {
         return nil
     }
     
@@ -32,5 +32,5 @@ func binarySearchRecursion(arr: [Int], target: Int, range: Range<Int>) -> Int? {
     }
 }
 
-let sortedArr1 = [3, 5, 8, 9, 11, 22, 37]
-binarySearchRecursion(arr: sortedArr1, target: 3, range: (0 ..< sortedArr1.count - 1))
+let sortedArr1 = [3, 5]
+binarySearchRecursion(arr: sortedArr1, target: 5, range: (0 ..< sortedArr1.count - 1))

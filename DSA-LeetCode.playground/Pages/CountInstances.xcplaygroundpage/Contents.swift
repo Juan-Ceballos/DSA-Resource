@@ -13,7 +13,8 @@ import Foundation
  
  edge cases, empty -> return
  
- sample input [0, 1, 2, 2, 3, 4], 2 -> 2
+ sample input [0, 1,1.5 2, 2,2.5 3, 4], 2 -> 2
+ // range of values
  sample input [0, 1, 2, 2, 3, 4], 7 -> 0
  sample input [] -> 0
  sample input [0, 1, 2, 2, 3, 4], 3 -> 1

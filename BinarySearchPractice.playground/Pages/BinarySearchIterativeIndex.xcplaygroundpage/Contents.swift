@@ -23,11 +23,11 @@ func binarySearch(arr: [Int], target: Int) -> Int {
             return middleIndex
         }
         
-        if target < middleValue {
+        else if target < middleValue {
             rightIndex = middleIndex - 1
         }
         
-        if target > middleValue {
+        else if target > middleValue {
            leftIndex = middleIndex + 1
         }
     }
@@ -35,5 +35,11 @@ func binarySearch(arr: [Int], target: Int) -> Int {
     return -999
 }
 
-let sortedArr1 = [3, 5, 8, 9, 11, 22, 37]
-binarySearch(arr: sortedArr1, target: 22)
+let sortedArr1 = [3]
+binarySearch(arr: sortedArr1, target: 3)
+
+//
+// copy paste
+// instead of returning middle index, would return whenever middle and
+// where do we insert value when it r3emains sorted
+
