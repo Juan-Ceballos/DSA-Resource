@@ -5,5 +5,6 @@
         <page name='BinarySearchRecursionRange'/>
         <page name='BinarySearchRecursionIndex'/>
         <page name='BinarySearchIterativeRange'/>
+        <page name='BinarySearchInsertionSorted'/>
     </pages>
 </playground>
