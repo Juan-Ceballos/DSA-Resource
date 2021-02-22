@@ -15,5 +15,6 @@
         <page name='MajorityElement'/>
         <page name='ImageCacher'/>
         <page name='CountInstances'/>
+        <page name='CountNegNumsInSortedArr'/>
     </pages>
 </playground>
