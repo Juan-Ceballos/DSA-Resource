@@ -16,5 +16,6 @@
         <page name='ImageCacher'/>
         <page name='CountInstances'/>
         <page name='CountNegNumsInSortedArr'/>
+        <page name='KWeakestRowsMatrix'/>
     </pages>
 </playground>
