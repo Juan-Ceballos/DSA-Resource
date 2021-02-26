@@ -4,5 +4,6 @@
         <page name='CountingValleys'/>
         <page name='SalesMatchPairs'/>
         <page name='JumpingOnClouds'/>
+        <page name='RepeatedStrings'/>
     </pages>
 </playground>
