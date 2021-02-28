@@ -5,5 +5,6 @@
         <page name='SalesMatchPairs'/>
         <page name='JumpingOnClouds'/>
         <page name='RepeatedStrings'/>
+        <page name='2DArrayDSHourGlass'/>
     </pages>
 </playground>

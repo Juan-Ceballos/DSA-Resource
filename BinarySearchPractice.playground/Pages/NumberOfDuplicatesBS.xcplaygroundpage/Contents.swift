@@ -90,4 +90,5 @@ let arr4 = [0, 1, 2, 2, 3, 4]
 print(arr4.count(of: 0))
 
 // binary, not finding something, binary search for the purpose of insertion
-//
+// 1) binary search work on a range of the array
+// 2) once left acquired start from left found to the end
