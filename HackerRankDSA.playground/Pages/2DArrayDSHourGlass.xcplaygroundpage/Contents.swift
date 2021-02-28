@@ -22,3 +22,5 @@ func hourglassSum(arr: [[Int]]) -> Int {
     }
     return currentMax
 }
+
+hourglassSum(arr: [[1,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]])

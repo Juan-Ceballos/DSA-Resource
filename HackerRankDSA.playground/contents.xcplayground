@@ -6,5 +6,6 @@
         <page name='JumpingOnClouds'/>
         <page name='RepeatedStrings'/>
         <page name='2DArrayDSHourGlass'/>
+        <page name='ArrayLeftRotation'/>
     </pages>
 </playground>
