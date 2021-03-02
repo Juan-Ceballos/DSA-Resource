@@ -7,5 +7,6 @@
         <page name='RepeatedStrings'/>
         <page name='2DArrayDSHourGlass'/>
         <page name='ArrayLeftRotation'/>
+        <page name='BribeChaos'/>
     </pages>
 </playground>
