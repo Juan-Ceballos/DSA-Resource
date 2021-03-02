@@ -8,5 +8,6 @@
         <page name='2DArrayDSHourGlass'/>
         <page name='ArrayLeftRotation'/>
         <page name='BribeChaos'/>
+        <page name='MarsExploration'/>
     </pages>
 </playground>
