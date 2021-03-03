@@ -9,5 +9,6 @@
         <page name='ArrayLeftRotation'/>
         <page name='BribeChaos'/>
         <page name='MarsExploration'/>
+        <page name='MinSwaps2'/>
     </pages>
 </playground>

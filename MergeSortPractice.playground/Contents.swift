@@ -62,3 +62,4 @@ func merge(leftArr: [Int], rightArr: [Int]) -> [Int] {
 let list = [12, 8, 29, -100, 234]
 let sortedList = mergeSort(list)
 print(sortedList)
+
