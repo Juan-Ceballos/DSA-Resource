@@ -19,7 +19,7 @@ func merge(leftArr: [Int], rightArr: [Int]) -> [Int] {
             resultsArr.append(leftValue)
             leftIndex += 1
         } else if rightValue < leftValue {
-            resultsArr.append(leftValue)
+            resultsArr.append(rightValue)
             rightIndex += 1
         } else {
             resultsArr.append(leftValue)
@@ -56,12 +56,13 @@ func mergeSort(arr: [Int]) -> [Int] {
     let middle = arr.count / 2
     
     // make left and right array recursively split
-    let leftArr = mergeSort(arr: Array(arr[..<middle]))
-    let rightArr = mergeSort(arr: Array(arr[middle...]))
+    let leftArray = mergeSort(arr: Array(arr[..<middle]))
+    let rightArray = mergeSort(arr: Array(arr[middle...]))
     
     // merge left and right using helper
-    return merge(leftArr: leftArr, rightArr: rightArr)
+    return merge(leftArr: leftArray, rightArr: rightArray)
 }
 
-
-
+let list = [22, 1, 100, 14, -2]
+let sortedList = mergeSort(arr: list)
+print(sortedList)
