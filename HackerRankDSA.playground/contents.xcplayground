@@ -10,5 +10,6 @@
         <page name='BribeChaos'/>
         <page name='MarsExploration'/>
         <page name='MinSwaps2'/>
+        <page name='FirstRepeatedWord'/>
     </pages>
 </playground>
