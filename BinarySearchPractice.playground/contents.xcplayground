@@ -8,5 +8,6 @@
         <page name='BinarySearchInsertionSorted'/>
         <page name='NumberOfDuplicatesBS'/>
         <page name='BinarySearchScratch'/>
+        <page name='BinarySearchScratch2'/>
     </pages>
 </playground>
