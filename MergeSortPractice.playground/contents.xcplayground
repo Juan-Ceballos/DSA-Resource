@@ -3,5 +3,6 @@
     <pages>
         <page name='MergeSort'/>
         <page name='MergeSort2'/>
+        <page name='MergeSort3'/>
     </pages>
 </playground>
