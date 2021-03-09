@@ -4,5 +4,6 @@
         <page name='QuickSortPostLesson'/>
         <page name='QuickSortFollowLesson'/>
         <page name='QuickSortScratch'/>
+        <page name='QuickSortScratch2'/>
     </pages>
 </playground>
