@@ -4,8 +4,6 @@ import Foundation
 
 func merge(leftArr: [Int], rightArr: [Int]) -> [Int] {
     
-    // setup variables for comparison and traverse
-    
     var leftIndex = 0
     var rightIndex = 0
     var resultsArr = [Int]()
@@ -29,19 +27,17 @@ func merge(leftArr: [Int], rightArr: [Int]) -> [Int] {
     }
     
     if leftIndex < leftArr.count {
-        resultsArr.append(contentsOf: resultsArr[leftIndex...])
+        resultsArr.append(contentsOf: leftArr[leftIndex...])
     }
     
     if rightIndex < rightArr.count {
-        resultsArr.append(contentsOf: resultsArr[rightIndex...])
+        resultsArr.append(contentsOf: rightArr[rightIndex...])
     }
     
     return resultsArr
 }
 
 func mergeSort(arr: [Int]) -> [Int] {
-    
-    // I'll start with setting up base case
     
     guard arr.count > 1 else {
         return arr
@@ -53,8 +49,9 @@ func mergeSort(arr: [Int]) -> [Int] {
     let rightArr = mergeSort(arr: Array(arr[middleIndex...]))
     
     return merge(leftArr: leftArr, rightArr: rightArr)
+    
 }
 
-let list = [9, 12, -8, 7, 22]
-let sortedList = mergeSort(arr: list)
-print(sortedList)
+let list = [9, 4, 2, -4, 5]
+let sort = mergeSort(arr: list)
+print(sort)

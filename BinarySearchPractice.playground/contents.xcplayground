@@ -9,5 +9,8 @@
         <page name='NumberOfDuplicatesBS'/>
         <page name='BinarySearchScratch'/>
         <page name='BinarySearchScratch2'/>
+        <page name='BinarySearchScratch3'/>
+        <page name='BinarySearchScratch4'/>
+        <page name='BinarySearchScratch5'/>
     </pages>
 </playground>

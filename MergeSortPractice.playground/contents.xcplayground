@@ -4,5 +4,8 @@
         <page name='MergeSort'/>
         <page name='MergeSort2'/>
         <page name='MergeSort3'/>
+        <page name='MergeSort4'/>
+        <page name='MergeSort5'/>
+        <page name='MergeSort6'/>
     </pages>
 </playground>

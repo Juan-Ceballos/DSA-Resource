@@ -11,5 +11,6 @@
         <page name='MarsExploration'/>
         <page name='MinSwaps2'/>
         <page name='FirstRepeatedWord'/>
+        <page name='AlternatingCharacters'/>
     </pages>
 </playground>
