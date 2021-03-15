@@ -12,5 +12,6 @@
         <page name='MinSwaps2'/>
         <page name='FirstRepeatedWord'/>
         <page name='AlternatingCharacters'/>
+        <page name='TwoStrings'/>
     </pages>
 </playground>
