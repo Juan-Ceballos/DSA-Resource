@@ -14,5 +14,7 @@
         <page name='AlternatingCharacters'/>
         <page name='TwoStrings'/>
         <page name='MakingAnagrams'/>
+        <page name='RansomNoteWords'/>
+        <page name='UsingStrideLongestTickets'/>
     </pages>
 </playground>

@@ -7,5 +7,7 @@
         <page name='MergeSort4'/>
         <page name='MergeSort5'/>
         <page name='MergeSort6'/>
+        <page name='MergeSort7'/>
+        <page name='MergeSort8'/>
     </pages>
 </playground>
