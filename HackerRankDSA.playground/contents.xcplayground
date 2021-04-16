@@ -16,5 +16,6 @@
         <page name='MakingAnagrams'/>
         <page name='RansomNoteWords'/>
         <page name='UsingStrideLongestTickets'/>
+        <page name='SherlockAnagrams'/>
     </pages>
 </playground>
