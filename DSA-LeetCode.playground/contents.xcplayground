@@ -17,6 +17,6 @@
         <page name='CountInstances'/>
         <page name='CountNegNumsInSortedArr'/>
         <page name='KWeakestRowsMatrix'/>
-        <page name='PathFinding'/>
+        <page name='ArraySign'/>
     </pages>
 </playground>
