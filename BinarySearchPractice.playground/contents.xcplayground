@@ -12,5 +12,7 @@
         <page name='BinarySearchScratch3'/>
         <page name='BinarySearchScratch4'/>
         <page name='BinarySearchScratch5'/>
+        <page name='BinarySearch6'/>
+        <page name='BinarySearch7'/>
     </pages>
 </playground>
