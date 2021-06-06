@@ -3,5 +3,6 @@
     <pages>
         <page name='FibMemo'/>
         <page name='GridTravelerMemo'/>
+        <page name='2dPractice'/>
     </pages>
 </playground>

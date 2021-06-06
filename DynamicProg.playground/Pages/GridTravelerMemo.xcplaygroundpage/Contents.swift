@@ -38,4 +38,3 @@ func gridTravelerMatrix(m: Int, n: Int) -> Int {
 }
 
 print(gridTravelerMatrix(m: 4, n: 4))
-// 5:20

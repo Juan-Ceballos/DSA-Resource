@@ -18,5 +18,8 @@
         <page name='CountNegNumsInSortedArr'/>
         <page name='KWeakestRowsMatrix'/>
         <page name='ArraySign'/>
+        <page name='RemoveDupes'/>
+        <page name='ContainerWMostWater'/>
+        <page name='NQueens'/>
     </pages>
 </playground>
