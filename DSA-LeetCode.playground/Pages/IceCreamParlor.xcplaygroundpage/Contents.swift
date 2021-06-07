@@ -21,7 +21,6 @@ func icecreamParlor(m: Int, arr: [Int]) -> [Int] {
     // Write your code here
     
     var index1 = 0
-    var index2 = 0
     var resultsArr = [Int]()
     
     for (index,price) in arr.enumerated() {
@@ -29,7 +28,6 @@ func icecreamParlor(m: Int, arr: [Int]) -> [Int] {
         let remainingValue = m - price
         for num in index..<arr.count - 1 {
             if remainingValue - arr[num + 1] == 0 {
-                index2 = num + 1
                 resultsArr.append(index1 + 1)
                 resultsArr.append(num + 2)
             }
