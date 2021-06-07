@@ -17,9 +17,11 @@
         <page name='CountInstances'/>
         <page name='CountNegNumsInSortedArr'/>
         <page name='KWeakestRowsMatrix'/>
+        <page name='KWeakestRowsTupleSol'/>
         <page name='ArraySign'/>
         <page name='RemoveDupes'/>
         <page name='ContainerWMostWater'/>
         <page name='NQueens'/>
+        <page name='MissingNumbers'/>
     </pages>
 </playground>
