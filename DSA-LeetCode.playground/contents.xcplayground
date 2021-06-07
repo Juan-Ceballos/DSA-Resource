@@ -23,5 +23,6 @@
         <page name='ContainerWMostWater'/>
         <page name='NQueens'/>
         <page name='MissingNumbers'/>
+        <page name='IceCreamParlor'/>
     </pages>
 </playground>
