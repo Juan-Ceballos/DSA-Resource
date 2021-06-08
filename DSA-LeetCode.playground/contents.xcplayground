@@ -25,5 +25,6 @@
         <page name='MissingNumbers'/>
         <page name='IceCreamParlor'/>
         <page name='CountingNegatives'/>
+        <page name='SortByParity'/>
     </pages>
 </playground>
