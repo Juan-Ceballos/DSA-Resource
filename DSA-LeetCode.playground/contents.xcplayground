@@ -24,5 +24,6 @@
         <page name='NQueens'/>
         <page name='MissingNumbers'/>
         <page name='IceCreamParlor'/>
+        <page name='CountingNegatives'/>
     </pages>
 </playground>

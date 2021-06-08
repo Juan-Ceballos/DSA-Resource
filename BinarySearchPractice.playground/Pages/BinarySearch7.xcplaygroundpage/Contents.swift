@@ -2,17 +2,15 @@
 
 import Foundation
 
-func binarySearch(arr: [Int], target: Int) -> Int {
+func binarySearch(arr: [Int]) -> Int {
     var low = 0
     var high = arr.count - 1
     
-    while low <= high {
+    while low < high {
         let middle = low + (high - low) / 2
         let middleValue = arr[middle]
         
-        if middleValue == target {
-            return middle
-        } else if middleValue < target {
+        if middleValue < 0 {
             high = middle - 1
         } else {
             low = middle + 1
@@ -20,5 +18,9 @@ func binarySearch(arr: [Int], target: Int) -> Int {
         
     }
     
-    return -9999
+    if low == arr.count - 1 && arr[low] >= 0 {
+        return 0
+    }
+    
+    return arr[low] >= 0 ? arr.count - low - 1 : arr.count - low
 }
