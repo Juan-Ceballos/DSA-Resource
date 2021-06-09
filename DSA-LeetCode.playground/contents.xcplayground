@@ -26,5 +26,6 @@
         <page name='IceCreamParlor'/>
         <page name='CountingNegatives'/>
         <page name='SortByParity'/>
+        <page name='ArrayDiscounts'/>
     </pages>
 </playground>
