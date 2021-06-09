@@ -27,5 +27,6 @@
         <page name='CountingNegatives'/>
         <page name='SortByParity'/>
         <page name='ArrayDiscounts'/>
+        <page name='MaxWealth'/>
     </pages>
 </playground>
