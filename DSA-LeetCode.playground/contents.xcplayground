@@ -28,5 +28,6 @@
         <page name='SortByParity'/>
         <page name='ArrayDiscounts'/>
         <page name='MaxWealth'/>
+        <page name='ShuffleArray'/>
     </pages>
 </playground>
