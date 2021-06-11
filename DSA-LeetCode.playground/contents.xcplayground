@@ -29,5 +29,6 @@
         <page name='ArrayDiscounts'/>
         <page name='MaxWealth'/>
         <page name='ShuffleArray'/>
+        <page name='NumberOfGoodPairs'/>
     </pages>
 </playground>
