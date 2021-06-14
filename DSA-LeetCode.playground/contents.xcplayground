@@ -30,5 +30,6 @@
         <page name='MaxWealth'/>
         <page name='ShuffleArray'/>
         <page name='NumberOfGoodPairs'/>
+        <page name='MatrixOdd'/>
     </pages>
 </playground>
