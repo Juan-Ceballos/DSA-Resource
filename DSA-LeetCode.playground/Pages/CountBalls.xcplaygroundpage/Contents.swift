@@ -20,3 +20,5 @@ func countBalls(_ lowLimit: Int, _ highLimit: Int) -> Int {
     }
     return freqDict.values.max() ?? 1
 }
+
+
