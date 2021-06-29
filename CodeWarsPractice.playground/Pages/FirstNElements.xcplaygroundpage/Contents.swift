@@ -8,7 +8,7 @@ func take(_ arr: [Int], _ n: Int) -> [Int] {
 }
 
 // my solution O(n)
-func take(_ arr: [Int], _ n: Int) -> [Int] {
+func take2(_ arr: [Int], _ n: Int) -> [Int] {
   
   guard !arr.isEmpty else {
     return []
