@@ -31,5 +31,7 @@
         <page name='ShuffleArray'/>
         <page name='NumberOfGoodPairs'/>
         <page name='MatrixOdd'/>
+        <page name='CountBalls'/>
+        <page name='LemonadeChange'/>
     </pages>
 </playground>
