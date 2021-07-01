@@ -4,5 +4,6 @@
         <page name='SquareDigits'/>
         <page name='FirstNElements'/>
         <page name='SumMix'/>
+        <page name='removNB'/>
     </pages>
 </playground>
