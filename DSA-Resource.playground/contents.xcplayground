@@ -6,5 +6,9 @@
         <page name='BinarySearch'/>
         <page name='Stack-ArrImplement'/>
         <page name='FrequencyDictionary'/>
+        <page name='StringSquares'/>
+        <page name='AddStrings'/>
+        <page name='RemoveDuplicateWords'/>
+        <page name='RepeatString'/>
     </pages>
 </playground>

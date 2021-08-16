@@ -17,5 +17,7 @@
         <page name='RansomNoteWords'/>
         <page name='UsingStrideLongestTickets'/>
         <page name='SherlockAnagrams'/>
+        <page name='CamelCase'/>
+        <page name='StrongPassword'/>
     </pages>
 </playground>

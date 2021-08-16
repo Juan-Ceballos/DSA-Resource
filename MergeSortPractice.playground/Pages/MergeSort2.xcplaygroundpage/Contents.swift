@@ -36,7 +36,7 @@ func merge(leftArr: [Int], rightArr: [Int]) -> [Int] {
     if rightIndex < rightArr.count {
         resultsArr.append(contentsOf: rightArr[rightIndex...])
     }
-    
+    print(1)
     return resultsArr
 }
 
@@ -63,6 +63,6 @@ func mergeSort(arr: [Int]) -> [Int] {
     return merge(leftArr: leftArray, rightArr: rightArray)
 }
 
-let list = [22, 1, 100, 14, -2]
+let list = [1, 1, 0, 0, 1, 1 ]
 let sortedList = mergeSort(arr: list)
 print(sortedList)
