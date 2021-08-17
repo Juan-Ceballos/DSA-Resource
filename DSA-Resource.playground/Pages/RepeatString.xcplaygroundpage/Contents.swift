@@ -2,6 +2,7 @@
 
 import Foundation
 
+// this is from code wars
 func repeatStr(_ n: Int, _ string: String) -> String {
     var result = ""
     

@@ -6,5 +6,6 @@
         <page name='SumMix'/>
         <page name='removNB'/>
         <page name='RemoveDupeWords'/>
+        <page name='Factorial'/>
     </pages>
 </playground>
