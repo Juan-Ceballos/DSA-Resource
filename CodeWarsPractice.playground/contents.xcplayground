@@ -7,5 +7,6 @@
         <page name='removNB'/>
         <page name='RemoveDupeWords'/>
         <page name='Factorial'/>
+        <page name='InsertNodeLL'/>
     </pages>
 </playground>
