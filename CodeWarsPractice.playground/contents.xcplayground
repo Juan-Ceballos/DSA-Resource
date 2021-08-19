@@ -8,5 +8,6 @@
         <page name='RemoveDupeWords'/>
         <page name='Factorial'/>
         <page name='InsertNodeLL'/>
+        <page name='BubbleSort'/>
     </pages>
 </playground>
