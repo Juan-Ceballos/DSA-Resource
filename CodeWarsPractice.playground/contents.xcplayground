@@ -9,5 +9,8 @@
         <page name='Factorial'/>
         <page name='InsertNodeLL'/>
         <page name='BubbleSort'/>
+        <page name='InsertionSortLinkedList'/>
+        <page name='SecretMessage'/>
+        <page name='StringOddEvenGrouped'/>
     </pages>
 </playground>
