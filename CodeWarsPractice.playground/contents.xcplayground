@@ -12,5 +12,7 @@
         <page name='InsertionSortLinkedList'/>
         <page name='SecretMessage'/>
         <page name='StringOddEvenGrouped'/>
+        <page name='ReplicateArrRecursion'/>
+        <page name='LinkedListAppend'/>
     </pages>
 </playground>
