@@ -17,5 +17,6 @@
         <page name='removeDuplicatedId'/>
         <page name='WellOfIdeas'/>
         <page name='FeastForBeast'/>
+        <page name='ReverseWords'/>
     </pages>
 </playground>
