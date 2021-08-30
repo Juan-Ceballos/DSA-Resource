@@ -16,5 +16,6 @@
         <page name='LinkedListAppend'/>
         <page name='removeDuplicatedId'/>
         <page name='WellOfIdeas'/>
+        <page name='FeastForBeast'/>
     </pages>
 </playground>
