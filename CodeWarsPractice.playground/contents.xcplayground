@@ -15,5 +15,6 @@
         <page name='ReplicateArrRecursion'/>
         <page name='LinkedListAppend'/>
         <page name='removeDuplicatedId'/>
+        <page name='WellOfIdeas'/>
     </pages>
 </playground>
