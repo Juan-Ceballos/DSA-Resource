@@ -22,4 +22,9 @@ var str = "Hello, playground"
      };
    return obj;
  };
+ 
+ console.log(removeDuplicateIds({
+   "1": ["A", "B", "C"],
+   "2": ["A", "B", "D", "A"],
+ }))
  */
