@@ -14,5 +14,6 @@
         <page name='StringOddEvenGrouped'/>
         <page name='ReplicateArrRecursion'/>
         <page name='LinkedListAppend'/>
+        <page name='removeDuplicatedId'/>
     </pages>
 </playground>
