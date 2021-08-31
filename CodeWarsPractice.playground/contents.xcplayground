@@ -19,5 +19,6 @@
         <page name='FeastForBeast'/>
         <page name='ReverseWords'/>
         <page name='Quotable'/>
+        <page name='FindSmallestInt'/>
     </pages>
 </playground>
