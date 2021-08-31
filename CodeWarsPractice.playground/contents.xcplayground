@@ -18,5 +18,6 @@
         <page name='WellOfIdeas'/>
         <page name='FeastForBeast'/>
         <page name='ReverseWords'/>
+        <page name='Quotable'/>
     </pages>
 </playground>
