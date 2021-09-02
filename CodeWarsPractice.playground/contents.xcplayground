@@ -20,5 +20,7 @@
         <page name='ReverseWords'/>
         <page name='Quotable'/>
         <page name='FindSmallestInt'/>
+        <page name='RBSTechnical'/>
+        <page name='MagicFindArr'/>
     </pages>
 </playground>
