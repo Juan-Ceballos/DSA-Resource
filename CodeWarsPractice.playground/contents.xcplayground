@@ -23,6 +23,7 @@
         <page name='RBSTechnical'/>
         <page name='MagicFindArr'/>
         <page name='NumObjs'/>
-        <page name='Untitled Page'/>
+        <page name='CountPosNeg'/>
+        <page name='FilterFunc'/>
     </pages>
 </playground>
