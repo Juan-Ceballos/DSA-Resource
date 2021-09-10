@@ -28,5 +28,6 @@
         <page name='JSNoneFunc'/>
         <page name='MapMultiplication'/>
         <page name='AddingProperty'/>
+        <page name='Filtering'/>
     </pages>
 </playground>
