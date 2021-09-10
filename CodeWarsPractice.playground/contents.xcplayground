@@ -26,5 +26,6 @@
         <page name='CountPosNeg'/>
         <page name='FilterFunc'/>
         <page name='JSNoneFunc'/>
+        <page name='MapMultiplication'/>
     </pages>
 </playground>
