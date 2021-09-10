@@ -25,5 +25,6 @@
         <page name='NumObjs'/>
         <page name='CountPosNeg'/>
         <page name='FilterFunc'/>
+        <page name='JSNoneFunc'/>
     </pages>
 </playground>
