@@ -29,5 +29,6 @@
         <page name='MapMultiplication'/>
         <page name='AddingProperty'/>
         <page name='Filtering'/>
+        <page name='Sorting'/>
     </pages>
 </playground>
