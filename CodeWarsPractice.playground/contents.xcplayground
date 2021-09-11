@@ -30,5 +30,7 @@
         <page name='AddingProperty'/>
         <page name='Filtering'/>
         <page name='Sorting'/>
+        <page name='HighOrderMapSet'/>
+        <page name='FlatMatrix'/>
     </pages>
 </playground>

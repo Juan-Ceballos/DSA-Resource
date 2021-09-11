@@ -8,4 +8,9 @@ import Foundation
    let languageSet = new Set(languageArr)
    return languageSet.size == 1
  }
+ 
+ 
+ function isSameLanguage(list) {
+   return list.every(e => e.language === list[0].language);
+ }
  */
