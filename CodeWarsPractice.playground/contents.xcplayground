@@ -32,5 +32,6 @@
         <page name='Sorting'/>
         <page name='HighOrderMapSet'/>
         <page name='FlatMatrix'/>
+        <page name='AddAllArrs'/>
     </pages>
 </playground>
