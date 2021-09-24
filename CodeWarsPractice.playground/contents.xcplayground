@@ -33,5 +33,8 @@
         <page name='HighOrderMapSet'/>
         <page name='FlatMatrix'/>
         <page name='AddAllArrs'/>
+        <page name='BinarySwap'/>
+        <page name='ClubDoorMan'/>
+        <page name='DecodingMessage'/>
     </pages>
 </playground>
