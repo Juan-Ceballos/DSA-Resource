@@ -36,5 +36,6 @@
         <page name='BinarySwap'/>
         <page name='ClubDoorMan'/>
         <page name='DecodingMessage'/>
+        <page name='DigitalCypher'/>
     </pages>
 </playground>
