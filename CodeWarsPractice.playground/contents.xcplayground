@@ -38,5 +38,6 @@
         <page name='DecodingMessage'/>
         <page name='DigitalCypher'/>
         <page name='SpinningWords'/>
+        <page name='FindOddInt'/>
     </pages>
 </playground>
