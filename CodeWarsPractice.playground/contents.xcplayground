@@ -39,5 +39,6 @@
         <page name='DigitalCypher'/>
         <page name='SpinningWords'/>
         <page name='FindOddInt'/>
+        <page name='DescendingOrder'/>
     </pages>
 </playground>
