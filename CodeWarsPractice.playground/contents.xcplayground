@@ -40,5 +40,6 @@
         <page name='SpinningWords'/>
         <page name='FindOddInt'/>
         <page name='DescendingOrder'/>
+        <page name='EncryptThis'/>
     </pages>
 </playground>
