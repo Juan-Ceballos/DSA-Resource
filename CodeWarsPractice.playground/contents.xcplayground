@@ -37,5 +37,6 @@
         <page name='ClubDoorMan'/>
         <page name='DecodingMessage'/>
         <page name='DigitalCypher'/>
+        <page name='SpinningWords'/>
     </pages>
 </playground>
