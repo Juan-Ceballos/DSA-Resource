@@ -41,5 +41,6 @@
         <page name='FindOddInt'/>
         <page name='DescendingOrder'/>
         <page name='EncryptThis'/>
+        <page name='RemoveDupesLL'/>
     </pages>
 </playground>
