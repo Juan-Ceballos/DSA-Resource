@@ -3,5 +3,6 @@
     <pages>
         <page name='Pursuit-MostCommonChar'/>
         <page name='Pursuit-LemonadeChange'/>
+        <page name='RaveTechnical'/>
     </pages>
 </playground>
