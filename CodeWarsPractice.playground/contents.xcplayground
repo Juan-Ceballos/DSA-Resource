@@ -42,5 +42,13 @@
         <page name='DescendingOrder'/>
         <page name='EncryptThis'/>
         <page name='RemoveDupesLL'/>
+        <page name='Pyramid'/>
+        <page name='Great'/>
+        <page name='Flip'/>
+        <page name='Parse'/>
+        <page name='Untitled Page'/>
+        <page name='TankVol'/>
+        <page name='CountTargets'/>
+        <page name='HowMuch'/>
     </pages>
 </playground>
