@@ -51,5 +51,6 @@
         <page name='CountTargets'/>
         <page name='HowMuch'/>
         <page name='MultiplesSum3Or5'/>
+        <page name='CountingDuplicates'/>
     </pages>
 </playground>
