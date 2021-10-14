@@ -25,3 +25,5 @@ func howMuch(_ m: Int, _ n: Int) -> [(String, String, String)] {
     }
     return result
 }
+
+// alternative using % and determining m  n order in CodeWars
