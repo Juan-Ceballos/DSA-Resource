@@ -19,5 +19,7 @@
         <page name='SherlockAnagrams'/>
         <page name='CamelCase'/>
         <page name='StrongPassword'/>
+        <page name='NumberLineJumps'/>
+        <page name='BetweenTwoSets'/>
     </pages>
 </playground>
