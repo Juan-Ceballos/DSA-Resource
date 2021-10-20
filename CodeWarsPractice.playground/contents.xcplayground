@@ -53,5 +53,6 @@
         <page name='MultiplesSum3Or5'/>
         <page name='CountingDuplicates'/>
         <page name='PersistentBugger'/>
+        <page name='FindParityOutlier'/>
     </pages>
 </playground>

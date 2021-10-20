@@ -11,5 +11,6 @@
         <page name='MergeSort8'/>
         <page name='MergeSort9'/>
         <page name='MergeSort10'/>
+        <page name='ms11'/>
     </pages>
 </playground>
