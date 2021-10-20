@@ -21,5 +21,6 @@
         <page name='StrongPassword'/>
         <page name='NumberLineJumps'/>
         <page name='BetweenTwoSets'/>
+        <page name='SimpleArraySum'/>
     </pages>
 </playground>
