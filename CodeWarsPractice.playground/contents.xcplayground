@@ -54,5 +54,8 @@
         <page name='CountingDuplicates'/>
         <page name='PersistentBugger'/>
         <page name='FindParityOutlier'/>
+        <page name='EvenOdd'/>
+        <page name='LookSpeakPattern'/>
+        <page name='ConsecutiveStrings'/>
     </pages>
 </playground>
