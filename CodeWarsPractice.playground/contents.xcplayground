@@ -57,5 +57,10 @@
         <page name='EvenOdd'/>
         <page name='LookSpeakPattern'/>
         <page name='ConsecutiveStrings'/>
+        <page name='BuildingCubes'/>
+        <page name='FindUniqueNumber'/>
+        <page name='ValidBraces'/>
+        <page name='FindTheMissingLetter'/>
+        <page name='RomanNumerals'/>
     </pages>
 </playground>
