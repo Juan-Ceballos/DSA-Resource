@@ -62,5 +62,6 @@
         <page name='ValidBraces'/>
         <page name='FindTheMissingLetter'/>
         <page name='RomanNumerals'/>
+        <page name='EncodeDuplicate'/>
     </pages>
 </playground>
