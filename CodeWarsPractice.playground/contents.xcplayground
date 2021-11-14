@@ -63,5 +63,7 @@
         <page name='FindTheMissingLetter'/>
         <page name='RomanNumerals'/>
         <page name='EncodeDuplicate'/>
+        <page name='StringDiamonds'/>
+        <page name='TwoSum'/>
     </pages>
 </playground>
