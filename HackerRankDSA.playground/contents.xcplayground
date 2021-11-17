@@ -22,5 +22,6 @@
         <page name='NumberLineJumps'/>
         <page name='BetweenTwoSets'/>
         <page name='SimpleArraySum'/>
+        <page name='Staircase'/>
     </pages>
 </playground>
