@@ -23,5 +23,6 @@
         <page name='BetweenTwoSets'/>
         <page name='SimpleArraySum'/>
         <page name='Staircase'/>
+        <page name='MiniMaxSum'/>
     </pages>
 </playground>
