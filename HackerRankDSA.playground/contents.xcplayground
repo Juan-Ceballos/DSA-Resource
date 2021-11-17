@@ -25,5 +25,6 @@
         <page name='Staircase'/>
         <page name='MiniMaxSum'/>
         <page name='BirthdayCandles'/>
+        <page name='DiagonalDifference'/>
     </pages>
 </playground>
