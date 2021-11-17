@@ -24,5 +24,6 @@
         <page name='SimpleArraySum'/>
         <page name='Staircase'/>
         <page name='MiniMaxSum'/>
+        <page name='BirthdayCandles'/>
     </pages>
 </playground>
