@@ -66,5 +66,7 @@
         <page name='StringDiamonds'/>
         <page name='TwoSum'/>
         <page name='Races'/>
+        <page name='stockList'/>
+        <page name='GoodVsEvil'/>
     </pages>
 </playground>
