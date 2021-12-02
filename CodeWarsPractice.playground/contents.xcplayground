@@ -68,5 +68,8 @@
         <page name='Races'/>
         <page name='stockList'/>
         <page name='GoodVsEvil'/>
+        <page name='DirectionsReduction'/>
+        <page name='WeightForWeight'/>
+        <page name='WhichAreIn'/>
     </pages>
 </playground>
