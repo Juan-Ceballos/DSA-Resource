@@ -71,5 +71,6 @@
         <page name='DirectionsReduction'/>
         <page name='WeightForWeight'/>
         <page name='WhichAreIn'/>
+        <page name='SF2CharSelect'/>
     </pages>
 </playground>
