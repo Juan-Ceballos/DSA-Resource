@@ -72,5 +72,6 @@
         <page name='WeightForWeight'/>
         <page name='WhichAreIn'/>
         <page name='SF2CharSelect'/>
+        <page name='BestTravel'/>
     </pages>
 </playground>
