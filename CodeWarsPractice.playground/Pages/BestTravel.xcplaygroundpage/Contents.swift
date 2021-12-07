@@ -117,7 +117,7 @@ func combinations2(_ arr: [Int]) -> [[Int]] {
   let first = arr[0]
   let rest = Array(arr[1...])
   
-  let combsWithoutFirst = combinations(rest)
+  let combsWithoutFirst = combinations2(rest)
   var combsWithFirst = [[Int]]()
   
   for comb in combsWithoutFirst {
