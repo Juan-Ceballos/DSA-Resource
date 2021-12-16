@@ -64,3 +64,78 @@ func rgb(_ r: Int, _ g: Int, _ b: Int) -> String {
   return hexStr.joined(separator: "")
   
 }
+
+// also check String(format:) and clamped
+func rgb2(_ r: Int, _ g: Int, _ b: Int) -> String {
+    var charAry:[Character] = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"]
+    var rtnStr = ""
+    var rgbAry:[Int] = [r, g, b]
+    for i in 0..<rgbAry.count{
+        if rgbAry[i] >= 255
+        {
+            rgbAry[i] = 255
+        }
+        else if rgbAry[i] <= 0
+        {
+            rgbAry[i] = 0
+        }
+        rtnStr.append(charAry[rgbAry[i]/16])
+        rtnStr.append(charAry[rgbAry[i]%16])
+    }
+    //print(rtnStr)
+    return rtnStr
+}
+
+func rgb3(_ r: Int, _ g: Int, _ b: Int) -> String {
+    func norm(_ n: Int) -> Int {
+      return min(255, max(0, n))
+    }
+    return String(format: "%02X%02X%02X", norm(r), norm(g), norm(b))
+}
+
+//---------
+
+func rgb4(_ r: Int, _ g: Int, _ b: Int) -> String {
+    return String(format:"%02X%02X%02X", r.roundToRGB(), g.roundToRGB(), b.roundToRGB())
+}
+
+extension Int {
+    func roundToRGB() -> Int {
+        return self > 255 ? 255 : (self < 0 ? 0 : self )
+    }
+}
+
+//-----------
+extension Int {
+  /// Returns hex code value of the number in range [00, FF].
+  ///
+  /// Discussion: Each value is treated as UInt8, making each
+  ///  negative value resulting in `"00"` and each value higher
+  ///  than 255 resulting in `"FF"`.
+  public var hexCode: String {
+    guard self > 0 else { return "00" }
+    guard self < 255 else { return "FF" }
+    return String(format:"%02X", self)
+  }
+}
+
+func rgb5(_ r: Int, _ g: Int, _ b: Int) -> String {
+  return "\(r.hexCode)\(g.hexCode)\(b.hexCode)"
+}
+
+//---------
+extension Strideable where Stride: SignedInteger {
+    func clamped(to limits: CountableClosedRange<Self>) -> Self {
+        return min(max(self, limits.lowerBound), limits.upperBound)
+    }
+}
+
+func rgb6(_ r: Int, _ g: Int, _ b: Int) -> String {
+    var cr = r.clamped(to: 0...255)
+    var cg = g.clamped(to: 0...255)
+    var cb = b.clamped(to: 0...255)
+    var hr = String(format:"%02X", cr)
+    var hg = String(format:"%02X", cg)
+    var hb = String(format:"%02X", cb)
+    return hr + hg + hb
+}
