@@ -74,5 +74,7 @@
         <page name='SF2CharSelect'/>
         <page name='BestTravel'/>
         <page name='RGBHexConversion'/>
+        <page name='ProdFib'/>
+        <page name='PrimeInNums'/>
     </pages>
 </playground>
