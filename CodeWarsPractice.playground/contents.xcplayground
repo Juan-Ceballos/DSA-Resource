@@ -76,5 +76,6 @@
         <page name='RGBHexConversion'/>
         <page name='ProdFib'/>
         <page name='PrimeInNums'/>
+        <page name='PrimeGaps'/>
     </pages>
 </playground>
