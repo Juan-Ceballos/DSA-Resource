@@ -125,3 +125,99 @@ func permutations(_ n:Int, _ a: inout Array<Character>) {
     }
     permutations(n-1,&a)
 }
+
+
+//---------------from solutions------------------------------------
+func nextBigger3(num: Int) -> Int? {
+    var digits = String(num).compactMap { $0.wholeNumberValue }
+    var i = digits.count - 1
+    
+    while i > 0 && digits[i - 1] >= digits[i] {
+        i -= 1
+    }
+    
+    guard i > 0 else { return nil }
+    
+    var j = digits.count - 1
+    while digits[j] <= digits[i - 1] {
+        j -= 1
+    }
+    
+    digits.swapAt(i - 1, j)
+    
+    j = digits.count - 1
+    while i < j {
+        digits.swapAt(i, j)
+        i += 1
+        j -= 1
+    }
+    
+    return Int(digits.reduce("", { $0 + String($1) }))
+}
+
+//------
+func nextBigger4(num: Int) -> Int? {
+  
+  var digits = String(num).compactMap{$0.wholeNumberValue!}
+    
+  // Return if all digits are same or smaller than previous ones.
+  guard digits != digits.sorted().reversed() else { return nil }
+    
+  let enumeratedDigits = Array(digits.enumerated())
+     
+  // Get the last digit that has at least one bigger digit after.
+  let a = enumeratedDigits.last(where: { d in
+    Array(digits[d.offset..<digits.count]).contains(where: { $0 > d.element })
+  })!
+    
+  // Get the smallest next digit with bigger value than a
+  let b = Array(enumeratedDigits[a.offset+1..<digits.count]
+        .filter({$0.element > a.element}))
+        .min(by: {$0.element < $1.element})!
+    
+  // Exchange digits
+  digits[a.offset] = b.element
+  digits[b.offset] = a.element
+    
+  // Sort digits after a.offset, so we garanty it's the smallest one
+  var digitsResults = digits[0...a.offset]
+  digitsResults.append(contentsOf: digits[a.offset+1...digits.count-1].sorted())
+
+  // Convert to Int
+  let result = Int(digitsResults.map(String.init).joined())
+  return result
+}
+
+//--------
+func nextBigger5(num: Int) -> Int? {
+    guard let chars = nextBiggerString(Array(String(num))) else { return nil }
+    return Int(String(chars))
+}
+
+func nextBiggerString(_ chars: [Character]) -> [Character]? {
+    guard chars.count > 1 else { return nil }
+    if let newChars = nextBiggerString(Array(chars[1...chars.count - 1])) {
+        return chars[0...0] + newChars
+    }else {
+        var sorted = chars.sorted()
+        let index = sorted.lastIndex(of: chars[0])!
+        guard index < sorted.count - 1 else { return nil }
+        sorted.insert(sorted.remove(at: index + 1), at: 0)
+        return sorted
+    }
+}
+
+//-------------
+
+func nextBigger6(num: Int) -> Int? {
+    let maxNumber = Int(String(num).sorted { $0 > $1 }.map { String($0) }.joined())!
+
+    let range = (num...maxNumber)
+    let numSorted = String(num).sorted()
+
+    for i in range {
+        let iSorted = String(i).sorted()
+        if numSorted == iSorted, i != num { return i }
+    }
+    return nil
+}
