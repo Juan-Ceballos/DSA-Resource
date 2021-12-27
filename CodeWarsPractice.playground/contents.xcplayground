@@ -77,5 +77,6 @@
         <page name='ProdFib'/>
         <page name='PrimeInNums'/>
         <page name='PrimeGaps'/>
+        <page name='NextBiggerSame'/>
     </pages>
 </playground>
