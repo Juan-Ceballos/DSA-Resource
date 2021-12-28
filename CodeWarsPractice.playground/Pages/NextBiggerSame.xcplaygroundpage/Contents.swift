@@ -116,6 +116,51 @@ func nextBigger2(num: Int) -> Int? {
   return nil
 }
 
+func nextBigger2Clean(num: Int) -> Int? {
+    if num < 10 {
+        return nil
+    }
+    
+    var arrNum = Array(String(num))
+    let setNum = Set(arrNum)
+    if setNum.count == 1 {
+        return nil
+    }
+    
+    for (index, num) in arrNum.enumerated().reversed() {
+        if index - 1 >= 0 {
+            let lastDigit = num
+            let secondLastDigit = arrNum[index - 1]
+            if lastDigit > secondLastDigit {
+                var rest = Array(arrNum[index...]).sorted {$0 < $1}
+                for (index, val) in rest.enumerated() {
+                    if val > secondLastDigit {
+                        rest.swapAt(index, 0)
+                        break
+                    }
+                }
+                
+                var i = index
+                for element in rest {
+                    arrNum[i] = element
+                    i += 1
+                }
+                arrNum.swapAt(index, index - 1)
+                var restB = Array(arrNum[index...]).sorted {$0 < $1}
+                print(restB)
+                let restBSorted = restB.sorted {$0 < $1}
+                i = index
+                for element in restB {
+                    arrNum[i] = element
+                    i += 1
+                }
+                return Int(String(arrNum))
+            }
+        }
+    }
+    return nil
+}
+
 // didnt use this
 func permutations(_ n:Int, _ a: inout Array<Character>) {
     if n == 1 {print(a); return}
