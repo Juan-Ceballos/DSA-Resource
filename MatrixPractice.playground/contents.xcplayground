@@ -4,5 +4,6 @@
         <page name='CreatingMatrix'/>
         <page name='TransposeMatrix'/>
         <page name='SearchMatrix'/>
+        <page name='SearchSemiSortedMatrix'/>
     </pages>
 </playground>
