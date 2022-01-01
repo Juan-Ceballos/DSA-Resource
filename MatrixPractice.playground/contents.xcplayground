@@ -6,5 +6,6 @@
         <page name='SearchMatrix'/>
         <page name='SearchSemiSortedMatrix'/>
         <page name='SetMatrixZeroes'/>
+        <page name='SpiralMatrix'/>
     </pages>
 </playground>
