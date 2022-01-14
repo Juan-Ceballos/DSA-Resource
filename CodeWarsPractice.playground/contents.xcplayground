@@ -78,5 +78,8 @@
         <page name='PrimeInNums'/>
         <page name='PrimeGaps'/>
         <page name='NextBiggerSame'/>
+        <page name='Combinatrix'/>
+        <page name='Memoization'/>
+        <page name='RecreationOne'/>
     </pages>
 </playground>
