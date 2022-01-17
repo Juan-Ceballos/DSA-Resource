@@ -23,3 +23,4 @@ let charAfterStartIndex = str.index(str.startIndex, offsetBy: 2)
 let charAfterStart = str[charAfterStartIndex]
 print(charAfterStart)
 
+

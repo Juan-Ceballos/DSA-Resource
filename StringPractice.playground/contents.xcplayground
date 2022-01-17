@@ -4,6 +4,8 @@
         <page name='Initializing'/>
         <page name='ConcatStrings'/>
         <page name='StrLengthIntConvert'/>
-        <page name='SubStrings'/>
+        <page name='StringIndex'/>
+        <page name='Substring'/>
+        <page name='StrFormatter'/>
     </pages>
 </playground>
