@@ -38,6 +38,7 @@ print(percentFormat ?? "none")
 // date formatter
 let dateFormatter = DateFormatter()
 let now = Date()
+//let sampleDate = Date(timeIntervalSince1970: TimeInterval(StringProtocol())
 print(now)
 dateFormatter.dateStyle = .full
 dateFormatter.timeStyle = .full
@@ -55,5 +56,42 @@ customDateFormatter.dateFormat = "EEEE, MMMM d, yyyy - hh:mm:ss a zzz"
 print(customDateFormatter.string(from: now))
 
 // string to date
-let sampleDate = "01.18.22"
+let sampleDate = "01.18.22" // date format has to be right for string, valid date str
+let df = DateFormatter()
+let df2 = DateFormatter()
 
+//df.locale = Locale(identifier: "na")
+df.dateStyle = .short
+df2.dateStyle = .full
+print(df.date(from: sampleDate) ?? "none")
+print(df2.date(from: sampleDate) ?? "none") // improper string for format of datestyle full
+//Locale.availableIdentifiers
+//TimeZone.knownTimeZoneIdentifiers
+//print(TimeZone.abbreviationDictionary)
+
+let calendar = Calendar.current // used for date components calendar based on device
+//let christmasComponent = DateComponents(calendar: <#T##Calendar?#>, timeZone: <#T##TimeZone?#>, era: <#T##Int?#>, year: <#T##Int?#>, month: <#T##Int?#>, day: <#T##Int?#>, hour: <#T##Int?#>, minute: <#T##Int?#>, second: <#T##Int?#>, nanosecond: <#T##Int?#>, weekday: <#T##Int?#>, weekdayOrdinal: <#T##Int?#>, quarter: <#T##Int?#>, weekOfMonth: <#T##Int?#>, weekOfYear: <#T##Int?#>, yearForWeekOfYear: <#T##Int?#>)
+var christmasComponents = DateComponents()
+christmasComponents.calendar = calendar
+christmasComponents.month = 12
+christmasComponents.day = 25
+christmasComponents.year = 2022
+
+let christmas = calendar.date(from: christmasComponents)
+let df3 = DateFormatter()
+df3.dateStyle = .full
+df3.timeStyle = .full
+print(df3.string(from: christmas ?? Date()))
+
+// specific days in future
+var familyComponents = DateComponents()
+familyComponents.calendar = calendar
+familyComponents.month = 2
+familyComponents.year = 2025
+familyComponents.weekday = 2 // day of week 2 = monday
+familyComponents.weekdayOrdinal = 3 // third monday of month
+let familyDay = calendar.date(from: familyComponents)
+let df4 = DateFormatter()
+df4.dateStyle = .full
+df4.timeStyle = .full
+print(df4.string(from: familyDay ?? Date()))
