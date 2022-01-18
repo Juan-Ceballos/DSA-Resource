@@ -95,3 +95,51 @@ let df4 = DateFormatter()
 df4.dateStyle = .full
 df4.timeStyle = .full
 print(df4.string(from: familyDay ?? Date()))
+
+
+// Date Calculations
+let df5 = DateFormatter()
+df5.dateStyle = .full
+df5.timeStyle = .medium
+
+let nowPlusHour = Date(timeInterval: 60 * 60, since: Date()) // ints are in seconds
+let nowPlusHour2 = Date(timeIntervalSinceNow: 60 * 60) // now date built in just have to pass
+// in time interval to calc from now
+print(df5.string(from: nowPlusHour))
+print(df5.string(from: nowPlusHour2))
+// maybe create a calendar date using date components and can calculate a new date using that
+// calendar date and timeInterval in Date constructor
+let dayAfterChristmas = Date(timeInterval: 60 * 60 * 24, since: christmas ?? Date())
+// day after christmas using calendar.date set with christmas components as christmas variable
+print(df5.string(from: dayAfterChristmas))
+
+// different date and calendar methods
+let distantPast = Date.distantPast
+let distantFuture = Date.distantFuture
+print(df5.string(from: distantPast))
+print(df5.string(from: distantFuture))
+let startOfDay = calendar.startOfDay(for: now) // can enter date as arg
+print(df5.string(from: startOfDay))
+
+var nextMondayComponents = DateComponents()
+nextMondayComponents.weekday = 2
+nextMondayComponents.hour = 9
+let nextMonday = calendar.nextDate(after: now, matching: nextMondayComponents, matchingPolicy: .nextTime)
+print(df5.string(from: nextMonday ?? Date()))
+
+// next week at noon
+var nowComponents = calendar.dateComponents([.day, .month, .year], from: now)
+nowComponents.hour = 12
+let nextWeek = calendar.date(byAdding: .day, value: 7, to: calendar.date(from: nowComponents)!)
+print(df5.string(from: nextWeek!))
+
+// calculate num of days between now and christmas
+var christmasComponents2 = DateComponents()
+//christmasComponents2.calendar = calendar
+christmasComponents2.day = 25
+christmasComponents2.year = 2022
+christmasComponents2.month = 12
+let christmasDay2 = calendar.date(from: christmasComponents2)
+let numberOfDaysTilChristmas = calendar.dateComponents([.day], from: now, to: christmasDay2!)
+// full days, to count when in middle of day use (..., from: calendar.startOfDay(for: now), to...)
+print(numberOfDaysTilChristmas.day!)
