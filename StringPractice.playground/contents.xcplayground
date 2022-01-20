@@ -7,5 +7,7 @@
         <page name='StringIndex'/>
         <page name='Substring'/>
         <page name='StrFormatter'/>
+        <page name='SoloDateFormatter'/>
+        <page name='MoreNumberFormatter'/>
     </pages>
 </playground>
