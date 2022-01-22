@@ -52,6 +52,7 @@ dateFormatterLocale.timeZone = TimeZone(identifier: "JST")
 print(dateFormatterLocale.string(from: now))
 
 let customDateFormatter = DateFormatter()
+print("Custom Date Format:")
 customDateFormatter.dateFormat = "EEEE, MMMM d, yyyy - hh:mm:ss a zzz"
 print(customDateFormatter.string(from: now))
 

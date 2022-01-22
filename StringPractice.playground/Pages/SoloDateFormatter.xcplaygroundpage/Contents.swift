@@ -13,3 +13,8 @@ let birthday = calendar.date(from: birthDayComponents)
 let numberOfDaysComponents = calendar.dateComponents([.day], from: calendar.startOfDay(for: now), to: birthday!)
 print(numberOfDaysComponents.day!)
 
+let dateFormatter = DateFormatter()
+dateFormatter.dateStyle = .short
+dateFormatter.timeStyle = .short
+print(dateFormatter.string(from: now))
+
