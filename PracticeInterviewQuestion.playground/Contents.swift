@@ -56,3 +56,24 @@ func formatTopics3(_ topics: [String], maxChar: Int) -> Int {
 }
 print()
 print(formatTopics3(topics, maxChar: 20))
+
+extension String {
+  var withoutPunctuations: String {
+    return self.components(separatedBy: CharacterSet.punctuationCharacters).joined(separator: " ")
+  }
+}
+var sampleStr = "Alphand_St."
+print(sampleStr.withoutPunctuations)
+
+func adjustStr(_ str: String) -> String {
+  let illegalChars = ["!", "@", "#", "$", "%", "^", "*", "-", "_", ","]
+  var strArr = Array(str).map{String($0)}
+  for (index, char) in strArr.enumerated() {
+    if illegalChars.contains(char) {
+      strArr[index] = " "
+    }
+  }
+  return strArr.joined(separator: "")
+}
+
+print(adjustStr(sampleStr))
