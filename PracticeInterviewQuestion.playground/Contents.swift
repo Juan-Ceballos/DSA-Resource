@@ -5,6 +5,7 @@ var topics = ["Animals", "Fashion", "Sports", "Music"]
 func formatTopics(_ topics: [String]) -> String {
     var count = 0
     var result = ""
+    if topics.count == 1 {return topics[0]}
     while count < topics.count - 1 {
         result += "\(topics[count]), "
         count += 1
@@ -38,5 +39,20 @@ print(formatTopics2(topics, 4))
 print(formatTopics2(topics, 8))
 
 func formatTopics3(_ topics: [String], maxChar: Int) -> Int {
-    return 0
+    /*
+     start with one string keep forming the format topics string
+     count the characters if remainder of max char increase string by one topic
+     keep topic count, return count
+     */
+    var currTopicArr = [String]()
+    var count = 0
+    for topic in topics {
+        currTopicArr.append(topic)
+        let currString = formatTopics(currTopicArr)
+        if currString.count <= maxChar {count += 1}
+        else {break}
+    }
+    return count
 }
+print()
+print(formatTopics3(topics, maxChar: 20))
