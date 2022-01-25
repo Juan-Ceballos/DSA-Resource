@@ -78,3 +78,48 @@ func adjustStr(_ str: String) -> String {
   }
   return strArr.joined(separator: "")
 }
+
+//-----
+func phone2(_ strng: String, _ num: String) -> String {
+    let matchedEntries = strng.split(separator: "\n").map { String($0) }.filter { $0.contains(num) }
+    
+    guard let matchedEntry = matchedEntries.first else { return "Error => Not found: \(num)" }
+    guard matchedEntries.count == 1 else { return "Error => Too many people: \(num)" }
+    
+    let nameRange = matchedEntry.range(of: "<(.*?)>", options: .regularExpression)!
+    let name = String(matchedEntry[nameRange])
+        .replacingOccurrences(of: "[<>]", with: "", options: .regularExpression)
+        .trimmingCharacters(in: .whitespacesAndNewlines)
+    
+    let addr: String = matchedEntry
+      .replacingOccurrences(of: "[_!@#$%^&*,/?;:<>+]|\(num)|\(name)", with: " ", options: .regularExpression)
+      .replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
+      .trimmingCharacters(in: .whitespacesAndNewlines)
+
+    return "Phone => \(num), Name => \(name), Address => \(addr)"
+}
+
+// ------
+
+func phone3(_ strng: String, _ num: String) -> String {
+    let entries = strng.components(separatedBy: .newlines).filter { $0.contains(num) }
+    
+    if entries.isEmpty { return "Error => Not found: \(num)"}
+    if entries.count > 1 { return "Error => Too many people: \(num)" }
+    
+    return entries.map {
+        let start = $0.firstIndex(of: "<")!
+        let end = $0.lastIndex(of: ">")!
+        let name = $0[$0.index(start, offsetBy: 1)...$0.index(end, offsetBy: -1)]
+        
+        let charsToRemove = CharacterSet(charactersIn: "+*#;/$?:,")
+        let addressString = $0
+            .replacingCharacters(in: start...end, with: "") // Remove name
+            .replacingOccurrences(of: #"\+\d{1,2}-\d{3}-\d{3}-\d{4}"#, with: "", options: .regularExpression) // Remove phone
+            .components(separatedBy: charsToRemove).filter { !$0.isEmpty }.joined(separator: " ").trimmingCharacters(in: .whitespaces) // Remove non alphanumeric
+            .replacingOccurrences(of: "_", with: " ") // Fix address styling
+            .components(separatedBy: .whitespaces).filter { !$0.isEmpty }.joined(separator: " ") // Remove extra whitespaces
+        
+        return "Phone => \(num), Name => \(name), Address => \(addressString)"
+    }.joined()
+}
