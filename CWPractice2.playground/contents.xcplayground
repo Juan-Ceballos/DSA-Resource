@@ -4,5 +4,6 @@
         <page name='FindSmallestDigits'/>
         <page name='PhoneDirectory'/>
         <page name='RainFall'/>
+        <page name='SalesmanTravel'/>
     </pages>
 </playground>

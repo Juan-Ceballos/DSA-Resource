@@ -49,4 +49,3 @@ let regex2 = NSRegularExpression("ca[a-z]*d")
  color and colour = colou?r = colo then 0 or 1 u then r
  
  */
- */
