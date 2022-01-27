@@ -9,5 +9,7 @@
         <page name='PrizeDraw'/>
         <page name='MirrorStrings'/>
         <page name='SumIntsInStr'/>
+        <page name='Mumbling'/>
+        <page name='Movie'/>
     </pages>
 </playground>
