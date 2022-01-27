@@ -8,5 +8,6 @@
         <page name='longestRepChar'/>
         <page name='PrizeDraw'/>
         <page name='MirrorStrings'/>
+        <page name='SumIntsInStr'/>
     </pages>
 </playground>
