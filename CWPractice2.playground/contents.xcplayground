@@ -6,5 +6,7 @@
         <page name='RainFall'/>
         <page name='SalesmanTravel'/>
         <page name='longestRepChar'/>
+        <page name='PrizeDraw'/>
+        <page name='MirrorStrings'/>
     </pages>
 </playground>
