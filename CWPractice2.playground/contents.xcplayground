@@ -11,5 +11,6 @@
         <page name='SumIntsInStr'/>
         <page name='Mumbling'/>
         <page name='Movie'/>
+        <page name='FakeBinary'/>
     </pages>
 </playground>
