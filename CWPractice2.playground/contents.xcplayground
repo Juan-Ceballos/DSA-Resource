@@ -12,5 +12,6 @@
         <page name='Mumbling'/>
         <page name='Movie'/>
         <page name='FakeBinary'/>
+        <page name='ShiftingAlphabet'/>
     </pages>
 </playground>

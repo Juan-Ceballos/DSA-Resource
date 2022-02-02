@@ -26,7 +26,7 @@ func repeatStr(_ s: String, _ n: Int) -> String {
 }
 
 //------------------------
-
+// .joined(separator: "-") for in between without having separator at end of string
 func accum2(_ str: String) -> String {
     return str.enumerated().map {
         repeatElement(String($1), count: $0 + 1)

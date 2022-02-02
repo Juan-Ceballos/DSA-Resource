@@ -26,6 +26,7 @@ func calcPerc(basePrice: Double, multiplier: Double, n: Int) -> Double {
 
 // -------------
 
+// ceil(_ :) -> Returns the ceiling of each element in a vector.
 import Foundation
 func movie2(card: Double, ticket: Double, perc: Double) -> Int {
     var (A, B) = (0.0, card)
