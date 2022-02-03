@@ -13,5 +13,6 @@
         <page name='Movie'/>
         <page name='FakeBinary'/>
         <page name='ShiftingAlphabet'/>
+        <page name='StatAvgMeanMed'/>
     </pages>
 </playground>
