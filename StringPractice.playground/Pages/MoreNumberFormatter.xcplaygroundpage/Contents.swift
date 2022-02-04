@@ -32,6 +32,7 @@ for num in numbers {
 print()
 
 let nf3 = NumberFormatter()
+nf3.roundingMode = .
 // before decimal separator
 nf3.minimumIntegerDigits = 10
 // after decimal separator, rounds off after decimal goes over,

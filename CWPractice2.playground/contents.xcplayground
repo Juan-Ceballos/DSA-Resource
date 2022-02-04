@@ -14,5 +14,6 @@
         <page name='FakeBinary'/>
         <page name='ShiftingAlphabet'/>
         <page name='StatAvgMeanMed'/>
+        <page name='NumberAbbreviation'/>
     </pages>
 </playground>
