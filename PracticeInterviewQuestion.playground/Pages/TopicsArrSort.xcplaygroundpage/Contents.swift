@@ -1,4 +1,6 @@
-import UIKit
+//: [Previous](@previous)
+
+import Foundation
 
 var topics = ["Animals", "Fashion", "Sports", "Music"]
 
