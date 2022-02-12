@@ -51,3 +51,4 @@ func middleNode(node: Node<Int>) -> Node<Int> {
 }
 
 print(middleNode(node: node1))
+// test change
