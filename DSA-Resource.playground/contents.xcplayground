@@ -11,5 +11,6 @@
         <page name='RemoveDuplicateWords'/>
         <page name='RepeatString'/>
         <page name='StridePractice'/>
+        <page name='LinkedListMidNode'/>
     </pages>
 </playground>
