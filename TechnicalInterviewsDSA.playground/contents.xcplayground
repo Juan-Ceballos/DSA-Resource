@@ -5,6 +5,8 @@
         <page name='Pursuit-LemonadeChange'/>
         <page name='RaveTechnical'/>
         <page name='Pursuit-Lemonade1'/>
-        <page name='FindAInStr'/>
+        <page name='PursuitFindAInStrRecursively'/>
+        <page name='PursuitFindMidNode'/>
+        <page name='PursuitSharedElementsTwoArrs'/>
     </pages>
 </playground>
