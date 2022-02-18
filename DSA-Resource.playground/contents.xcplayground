@@ -12,5 +12,6 @@
         <page name='RepeatString'/>
         <page name='StridePractice'/>
         <page name='LinkedListMidNode'/>
+        <page name='QueuePractice'/>
     </pages>
 </playground>

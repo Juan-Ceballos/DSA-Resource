@@ -50,6 +50,9 @@ node3.next = node4
    return p1
 }
 
+print(midNode(node1)?.data ?? -1)
+
+//----------------------------
 
 func middleNode(_ head: ListNode?) -> ListNode? {
     var count = getCount(head)
@@ -75,8 +78,6 @@ func middleNode2(_ head: ListNode?) -> ListNode? {
     }
     return slow
 }
-
-midNode(node1)?.data ?? -1
 
 /*
 ## Solution Overview
