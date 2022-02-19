@@ -4,24 +4,27 @@ import Foundation
 
 /*
  Dynamic Problem - Express in terms of sub-problems
- 
+ - For this problem sums kinda stores subarrays
+ -
  */
 func maxSubArray(_ nums: [Int]) -> Int {
-    if nums.isEmpty {
-        return Int.min
-    }
-    var maxValue = nums[0]
-    var preMax = nums[0]
+    // current and max sum is first number in array
+    var currSum = nums[0]
+    var maxSum = nums[0]
+    
+    // from second element to last
     for i in 1..<nums.count {
-        let value = nums[i]
-        let curMax = max(preMax + value, value)
-        maxValue = max(maxValue, curMax)
-        preMax = curMax
+        // check wheter max is current element OR
+        // the sum of previous elements(could be one element) PLUS the current element
+        // the sum of the previous elements called currSum could be a single element prior
+        currSum = max(nums[i], currSum + nums[i])
+        // check wheter maxSum is the current maxSum or the found currSum
+        maxSum = max(maxSum, currSum)
     }
-    return maxValue
+    return maxSum
 }
 
-
+//-------------
 func bruteMaxSubArr(_ nums: [Int]) -> Int {
     var max = Int.min
     for num in 0..<nums.count {
