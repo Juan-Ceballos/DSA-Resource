@@ -33,5 +33,7 @@
         <page name='MatrixOdd'/>
         <page name='CountBalls'/>
         <page name='LemonadeChange'/>
+        <page name='TwoSumDict'/>
+        <page name='MoveZeros'/>
     </pages>
 </playground>
