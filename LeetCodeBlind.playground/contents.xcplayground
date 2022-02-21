@@ -6,5 +6,6 @@
         <page name='ContainsDup'/>
         <page name='BuySellStock'/>
         <page name='Anagram'/>
+        <page name='ValidBrackets'/>
     </pages>
 </playground>
